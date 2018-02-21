@@ -21,7 +21,7 @@ public class FrameDiagrams {
     private double StartY2;
 
     private double[] ArrayX,ArrayY;
-    InnerDiagram diagram;
+    Diagram diagram;
     JFrame frame;
 
 
@@ -41,12 +41,12 @@ public class FrameDiagrams {
         JButton toNorthBtn = new JButton("^");
         toNorthBtn.addActionListener(new ToNorthListener());
 
-        JButton toSouthBtn = new JButton("");
+        JButton toSouthBtn = new JButton("\\/");
         toSouthBtn.addActionListener(new ToSouthListener());
 
 
         frame.setSize(FrameWidth, FrameHeight);
-        diagram = new InnerDiagram();
+        diagram = new Diagram();
 
         JPanel panel = new JPanel();
         panel.setLayout(new BorderLayout());
@@ -66,13 +66,13 @@ public class FrameDiagrams {
         frame.setVisible(true);
 
     }
-    class InnerDiagram extends JPanel{
+    class Diagram extends JPanel{
         private int Height = 500;//
         private int Width = 700;//
 
 
 
-        public InnerDiagram(){
+        public Diagram(){
 
             /*Wcx = Left;
             Wcy = Height-Bottom;
