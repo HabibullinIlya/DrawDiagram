@@ -1,3 +1,7 @@
+package IlyaRH.Tests;
+
+import IliaRH.Diagrams.FrameDiagrams;
+
 public class TestFrameDiagrams {
     public static void main(String[] args){
         FrameDiagrams frameDiagrams = new FrameDiagrams();
@@ -12,13 +16,13 @@ public class TestFrameDiagrams {
             arrayX[i] = x;
             arrayY[i] = Math.pow(x/10,2);
         }
-        for(int i = 0;i<21;i++){
+        /*for(int i = 0;i<21;i++){
             System.out.print(" "+arrayX[i]+" ");
-        }
-        System.out.println();
+        }*/
+        /*System.out.println();
         for(int i = 0;i<21;i++){
             System.out.print(" "+arrayY[i]+" ");
-        }
+        }*/
         frameDiagrams.drawDiagram(arrayX,arrayY);
     }
 }

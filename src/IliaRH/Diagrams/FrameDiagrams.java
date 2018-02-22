@@ -1,3 +1,5 @@
+package IliaRH.Diagrams;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -20,83 +22,80 @@ public class FrameDiagrams {
     private double StartX2;//В ОБЫЧНЫХ КООРДИНАТАХ
     private double StartY2;
 
-    private double[] ArrayX,ArrayY;
+    private double[] ArrayX,ArrayY;// МАССИВЫ ПО КОТОРЫМ СТРОИТСЯ ГРАФИК
     Diagram diagram;
     JFrame frame;
 
 
 
 
-    public void drawDiagram(double[] arrayX,double[] arrayY){
+    public void drawDiagram(double[] arrayX,double[] arrayY){//на вход функция принимает два массива ПО КОТОРЫМ СТРОИТСЯ ГРАФИК
         this.ArrayX = arrayX;
         this.ArrayY = arrayY;
         frame = new JFrame();
 
+
+        //создание кнопок и добавление к ним действия
         JButton toRightBtn = new JButton("->");
-        toRightBtn.addActionListener(new ToRightListener());
+
+
+        toRightBtn.addActionListener((event)-> {
+                StartX += 5;
+                diagram.repaint();
+        });
 
         JButton toLeftBtn = new JButton("<-");
-        toLeftBtn.addActionListener(new ToLeftListener());
+        toLeftBtn.addActionListener((event)->{
+                StartY+=5;
+                diagram.repaint();
+        });
 
         JButton toNorthBtn = new JButton("^");
-        toNorthBtn.addActionListener(new ToNorthListener());
+        toNorthBtn.addActionListener((event)->{
+                StartY+=5;
+                diagram.repaint();
+        });
 
         JButton toSouthBtn = new JButton("\\/");
-        toSouthBtn.addActionListener(new ToSouthListener());
+        toSouthBtn.addActionListener((event)->{
+                StartY-=5;
+                diagram.repaint();
+        });
 
-
+        //размер окна
         frame.setSize(FrameWidth, FrameHeight);
-        diagram = new Diagram();
+        diagram = new Diagram();//создаем экземпляр внутреннего класса Diagram
 
+
+        //компоновка элементов в окне
         JPanel panel = new JPanel();
         panel.setLayout(new BorderLayout());
         panel.add(BorderLayout.WEST,toLeftBtn);
         panel.add(BorderLayout.EAST,toRightBtn);
         panel.add(BorderLayout.NORTH,toNorthBtn);
         panel.add(BorderLayout.SOUTH,toSouthBtn);
-        //panel.add(toLeftBtn);
-        //panel.add(toRightBtn);
-
         frame.getContentPane().add(BorderLayout.CENTER,diagram);
         frame.getContentPane().add(BorderLayout.SOUTH,panel);
-        //frame.getContentPane().add(BorderLayout.SOUTH,toLeftBtn);
-        //frame.getContentPane().add(BorderLayout.SOUTH,toRightBtn);
-
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
 
     }
-    class Diagram extends JPanel{
-        private int Height = 500;//
-        private int Width = 700;//
+    class Diagram extends JPanel{//КЛАСС РЕАЛИЗУЮЩИЙ ОТРИСОВКУ ГРАФИКА
+        private int Height = 500;//МЭЙБИ НУЖНО ЗАМЕНИТЬ НА frame.getHeight()-некотрое число пикселей
+        private int Width = 700;//но это не точно
 
-
-
-        public Diagram(){
-
-            /*Wcx = Left;
-            Wcy = Height-Bottom;
-            Wx = Width - Left - Right;
-            Wy = Height - Top - Bottom;
-
-            Vcy = 30;
-            Vcx = Left;
-            Vx = Width - Left - Right;
-            Vy = Height - Top - Bottom;
-            StartX2 = (StartX - Vcx)/Vx*Wx+Wcx;
-            StartY2 = Wcy - ((StartY -Vcy)/Vy)*Wy;*/
-
-        }
         @Override
-        protected void paintComponent(Graphics g) {
+        protected void paintComponent(Graphics g) {//отрисвка графика
             g.setColor(Color.WHITE);
             g.fillRect(0,0,getWidth(),getHeight());
-            Wcx = Left;
-            Wcy = Height-Bottom;
-            Wx = Width - Left - Right;
-            Wy = Height - Top - Bottom;
 
-            Vcy = 30;
+            //задаем область на которой будет график
+            Wcx = Left;//левый нижний угол области в СКЭ
+            Wcy = Height-Bottom;//левый нижний угол области в СКЭ
+            Wx = Width - Left - Right;//размер области по икс
+            Wy = Height - Top - Bottom;//размер области по игрик
+
+            Vcy = 1;//аналогично в КСК
             Vcx = Left;
             Vx = Width - Left - Right;
             Vy = Height - Top - Bottom;
@@ -104,19 +103,14 @@ public class FrameDiagrams {
             StartY2 = Wcy - ((StartY -Vcy)/Vy)*Wy;
 
             g.setColor(Color.BLACK);
-            drawDiagrams(g,ArrayX,ArrayY);
-            double pixelW = (1 / Wx)*Vx;
-            for(int i = 0;i<5;i++){
-                Vx -= pixelW;
-                Vcx += pixelW / 2;
-            }
-            drawDiagrams(g,ArrayX,ArrayY);
-            System.out.println("kkkk");
+            drawDiagrams(g,ArrayX,ArrayY);//отрисовка
+
+
         }
         private void drawDiagrams(Graphics g, double[] arrayX, double[] arrayY){
-            drawAxesX(g,(int) StartY2);
+            drawAxesX(g,(int) StartY2);//оси
             drawAxesY(g,(int) StartX2);
-            graph(g,arrayX,arrayY);
+            graph(g,arrayX,arrayY);//график
         }
         private void drawAxesX(Graphics g,int y0){
 
@@ -137,6 +131,7 @@ public class FrameDiagrams {
 
         }
         private void graph(Graphics g, double[] arrayX, double[] arrayY ){
+            //Алгоритм построения графика
             Graphics2D g2d = (Graphics2D)g;
             BasicStroke bSAxes = new BasicStroke(2.0f);
             g2d.setStroke(bSAxes);
@@ -152,47 +147,15 @@ public class FrameDiagrams {
                 if(arrayY[i]>maxEl)
                     maxEl = ArrayY[i];
             }
-            System.out.println("max element "+maxEl);
+
             for(int i = 0;i<=maxEl;i+=stepForAxesY){
-                //System.out.println(StartY2-ArrayY[i]);
+
                 g2d.drawString(String.valueOf(i),(int)(StartX2+5),(int)(StartY2-i));
             }
-            System.out.println();
+
 
 
         }
     }
 
-
-    private class ToRightListener implements ActionListener {
-        @Override
-        public void actionPerformed(ActionEvent actionEvent) {
-            StartX+=5;
-            diagram.repaint();
-        }
-    }
-
-    private class ToLeftListener implements ActionListener {
-        @Override
-        public void actionPerformed(ActionEvent actionEvent) {
-            StartX-=5;
-            diagram.repaint();
-        }
-    }
-
-    private class ToNorthListener implements ActionListener {
-        @Override
-        public void actionPerformed(ActionEvent actionEvent) {
-            StartY+=5;
-            diagram.repaint();
-        }
-    }
-
-    private class ToSouthListener implements ActionListener {
-        @Override
-        public void actionPerformed(ActionEvent actionEvent) {
-            StartY-=5;
-            diagram.repaint();
-        }
-    }
 }

@@ -2,18 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cbdaabf-32f8-487e-85d5-61135d6f7ada" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Diagrams/IliaRH/Diagrams/FrameDiagrams$Diagram.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Diagrams/IliaRH/Diagrams/FrameDiagrams.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/Diagrams/IlyaRH/Tests/TestFrameDiagrams.class" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/Diagrams/Diagram.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Diagrams/FrameDiagrams$1.class" afterPath="$PROJECT_DIR$/out/production/Diagrams/FrameDiagrams$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Diagrams/FrameDiagrams$InnerDiagram.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Diagrams/FrameDiagrams$ToLeftListener.class" afterPath="$PROJECT_DIR$/out/production/Diagrams/FrameDiagrams$ToLeftListener.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Diagrams/FrameDiagrams$ToNorthListener.class" afterPath="$PROJECT_DIR$/out/production/Diagrams/FrameDiagrams$ToNorthListener.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Diagrams/FrameDiagrams$ToRightListener.class" afterPath="$PROJECT_DIR$/out/production/Diagrams/FrameDiagrams$ToRightListener.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Diagrams/FrameDiagrams$ToSouthListener.class" afterPath="$PROJECT_DIR$/out/production/Diagrams/FrameDiagrams$ToSouthListener.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Diagrams/FrameDiagrams.class" afterPath="$PROJECT_DIR$/out/production/Diagrams/FrameDiagrams.class" />
-      <change beforePath="$PROJECT_DIR$/src/Diagram.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/FrameDiagrams.java" afterPath="$PROJECT_DIR$/src/FrameDiagrams.java" />
+      <change beforePath="$PROJECT_DIR$/out/production/Diagrams/Figuras/Point.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Diagrams/FrameDiagrams$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Diagrams/FrameDiagrams$Diagram.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Diagrams/FrameDiagrams$ToLeftListener.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Diagrams/FrameDiagrams$ToNorthListener.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Diagrams/FrameDiagrams$ToRightListener.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Diagrams/FrameDiagrams$ToSouthListener.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Diagrams/FrameDiagrams.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Diagrams/TestFrameDiagrams.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Figuras/Point.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/FrameDiagrams.java" afterPath="$PROJECT_DIR$/src/IliaRH/Diagrams/FrameDiagrams.java" />
+      <change beforePath="$PROJECT_DIR$/src/TestFrameDiagrams.java" afterPath="$PROJECT_DIR$/src/IlyaRH/Tests/TestFrameDiagrams.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,26 +30,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="FrameDiagrams.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/FrameDiagrams.java">
+        <entry file="file://$PROJECT_DIR$/src/IliaRH/Diagrams/FrameDiagrams.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="32" column="29" lean-forward="true" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+            <state relative-caret-position="650">
+              <caret line="154" column="0" lean-forward="true" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#drawDiagrams#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
+                <element signature="e#1202#1287#0" expanded="false" />
+                <element signature="e#1374#1456#0" expanded="false" />
+                <element signature="e#1544#1626#0" expanded="false" />
+                <element signature="e#1716#1798#0" expanded="false" />
                 <element signature="method#drawAxesX#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
                 <element signature="method#drawAxesY#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
-                <element signature="method#graph#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="TestFrameDiagrams.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TestFrameDiagrams.java">
+        <entry file="file://$PROJECT_DIR$/src/IlyaRH/Tests/TestFrameDiagrams.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+            <state relative-caret-position="85">
+              <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -76,6 +82,8 @@
         <option value="$PROJECT_DIR$/src/TestFrameDiagrams.java" />
         <option value="$PROJECT_DIR$/src/Diagram.java" />
         <option value="$PROJECT_DIR$/src/FrameDiagrams.java" />
+        <option value="$PROJECT_DIR$/src/IlyaRH/Tests/TestFrameDiagrams.java" />
+        <option value="$PROJECT_DIR$/src/IliaRH/Diagrams/FrameDiagrams.java" />
       </list>
     </option>
   </component>
@@ -84,6 +92,12 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="63" />
@@ -107,9 +121,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -122,10 +134,24 @@
               <item name="Diagrams" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Diagrams" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Diagrams" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Diagrams" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Diagrams" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Diagrams" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Tests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -135,7 +161,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
@@ -160,7 +186,7 @@
     </configuration>
     <configuration name="TestFrameDiagrams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="TestFrameDiagrams" />
+      <option name="MAIN_CLASS_NAME" value="IlyaRH.Tests.TestFrameDiagrams" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -271,34 +297,35 @@
       <workItem from="1518629592295" duration="10041000" />
       <workItem from="1519140458650" duration="225000" />
       <workItem from="1519140811631" duration="15986000" />
-      <workItem from="1519194488355" duration="7749000" />
+      <workItem from="1519194488355" duration="8279000" />
+      <workItem from="1519329794302" duration="4108000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45928000" />
+    <option name="totallyTimeSpent" value="50566000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="63" y="-4" width="1303" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868218" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293556" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25660965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14001592" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24502784" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
@@ -306,7 +333,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -319,26 +346,52 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="12" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/FrameDiagrams.java">
+    <entry file="file://$PROJECT_DIR$/src/IliaRH/Diagrams/FrameDiagrams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1202#1287#0" expanded="false" />
+            <element signature="e#1374#1456#0" expanded="false" />
+            <element signature="e#1544#1626#0" expanded="false" />
+            <element signature="e#1716#1798#0" expanded="false" />
+            <element signature="method#drawAxesX#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
+            <element signature="method#drawAxesY#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IlyaRH/Tests/TestFrameDiagrams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IliaRH/Diagrams/FrameDiagrams.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#drawDiagrams#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
+            <element signature="e#1202#1287#0" expanded="false" />
+            <element signature="e#1374#1456#0" expanded="false" />
+            <element signature="e#1544#1626#0" expanded="false" />
+            <element signature="e#1716#1798#0" expanded="false" />
             <element signature="method#drawAxesX#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
             <element signature="method#drawAxesY#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
-            <element signature="method#graph#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestFrameDiagrams.java">
+    <entry file="file://$PROJECT_DIR$/src/IlyaRH/Tests/TestFrameDiagrams.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
@@ -346,37 +399,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Diagram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="100" column="30" lean-forward="false" selection-start-line="100" selection-start-column="30" selection-end-line="100" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrameDiagrams.java">
+    <entry file="file://$PROJECT_DIR$/src/Diagram.java" />
+    <entry file="file://$PROJECT_DIR$/src/IliaRH/Diagrams/FrameDiagrams.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="5" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#drawDiagrams#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
+            <element signature="e#1202#1287#0" expanded="false" />
+            <element signature="e#1374#1456#0" expanded="false" />
+            <element signature="e#1544#1626#0" expanded="false" />
+            <element signature="e#1716#1798#0" expanded="false" />
             <element signature="method#drawAxesX#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
             <element signature="method#drawAxesY#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
-            <element signature="method#graph#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Diagram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2006">
-          <caret line="118" column="9" lean-forward="false" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestFrameDiagrams.java">
+    <entry file="file://$PROJECT_DIR$/src/Diagram.java" />
+    <entry file="file://$PROJECT_DIR$/src/IlyaRH/Tests/TestFrameDiagrams.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="43" lean-forward="false" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
@@ -384,21 +425,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrameDiagrams.java">
+    <entry file="file://$PROJECT_DIR$/src/IliaRH/Diagrams/FrameDiagrams.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="5" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#drawDiagrams#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
+            <element signature="e#1202#1287#0" expanded="false" />
+            <element signature="e#1374#1456#0" expanded="false" />
+            <element signature="e#1544#1626#0" expanded="false" />
+            <element signature="e#1716#1798#0" expanded="false" />
             <element signature="method#drawAxesX#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
             <element signature="method#drawAxesY#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
-            <element signature="method#graph#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestFrameDiagrams.java">
+    <entry file="file://$PROJECT_DIR$/src/IlyaRH/Tests/TestFrameDiagrams.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="43" lean-forward="false" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
@@ -406,29 +449,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Diagram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1870">
-          <caret line="118" column="9" lean-forward="true" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrameDiagrams.java">
+    <entry file="file://$PROJECT_DIR$/src/Diagram.java" />
+    <entry file="file://$PROJECT_DIR$/src/IliaRH/Diagrams/FrameDiagrams.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="5" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#drawDiagrams#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
+            <element signature="e#1202#1287#0" expanded="false" />
+            <element signature="e#1374#1456#0" expanded="false" />
+            <element signature="e#1544#1626#0" expanded="false" />
+            <element signature="e#1716#1798#0" expanded="false" />
             <element signature="method#drawAxesX#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
             <element signature="method#drawAxesY#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
-            <element signature="method#graph#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestFrameDiagrams.java">
+    <entry file="file://$PROJECT_DIR$/src/IlyaRH/Tests/TestFrameDiagrams.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="43" lean-forward="false" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
@@ -436,24 +474,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Diagram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="100" column="39" lean-forward="true" selection-start-line="100" selection-start-column="39" selection-end-line="100" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrameDiagrams.java">
+    <entry file="file://$PROJECT_DIR$/src/Diagram.java" />
+    <entry file="file://$PROJECT_DIR$/src/IliaRH/Diagrams/FrameDiagrams.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#drawDiagrams#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
+            <element signature="e#1202#1287#0" expanded="false" />
+            <element signature="e#1374#1456#0" expanded="false" />
+            <element signature="e#1544#1626#0" expanded="false" />
+            <element signature="e#1716#1798#0" expanded="false" />
             <element signature="method#drawAxesX#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
             <element signature="method#drawAxesY#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
-            <element signature="method#graph#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -465,7 +498,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestFrameDiagrams.java">
+    <entry file="file://$PROJECT_DIR$/src/IlyaRH/Tests/TestFrameDiagrams.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="43" lean-forward="false" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
@@ -473,29 +506,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Diagram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="56" column="35" lean-forward="true" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrameDiagrams.java">
+    <entry file="file://$PROJECT_DIR$/src/Diagram.java" />
+    <entry file="file://$PROJECT_DIR$/src/IliaRH/Diagrams/FrameDiagrams.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#drawDiagrams#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
+            <element signature="e#1202#1287#0" expanded="false" />
+            <element signature="e#1374#1456#0" expanded="false" />
+            <element signature="e#1544#1626#0" expanded="false" />
+            <element signature="e#1716#1798#0" expanded="false" />
             <element signature="method#drawAxesX#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
             <element signature="method#drawAxesY#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
-            <element signature="method#graph#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestFrameDiagrams.java">
+    <entry file="file://$PROJECT_DIR$/src/IlyaRH/Tests/TestFrameDiagrams.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="43" lean-forward="false" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
@@ -503,16 +531,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrameDiagrams.java">
+    <entry file="file://$PROJECT_DIR$/src/IliaRH/Diagrams/FrameDiagrams.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#drawDiagrams#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
+            <element signature="e#1202#1287#0" expanded="false" />
+            <element signature="e#1374#1456#0" expanded="false" />
+            <element signature="e#1544#1626#0" expanded="false" />
+            <element signature="e#1716#1798#0" expanded="false" />
             <element signature="method#drawAxesX#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
             <element signature="method#drawAxesY#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
-            <element signature="method#graph#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -524,7 +554,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestFrameDiagrams.java">
+    <entry file="file://$PROJECT_DIR$/src/IlyaRH/Tests/TestFrameDiagrams.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="43" lean-forward="true" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
@@ -532,14 +562,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Diagram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Diagram.java" />
     <entry file="file://$PROJECT_DIR$/src/Figuras/Point.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -547,32 +570,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestFrameDiagrams.java">
+    <entry file="file://$PROJECT_DIR$/src/Diagram.java" />
+    <entry file="file://$PROJECT_DIR$/src/IlyaRH/Tests/TestFrameDiagrams.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        <state relative-caret-position="85">
+          <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Diagram.java">
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/awt/event/ActionListener.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-560">
-          <caret line="55" column="5" lean-forward="true" selection-start-line="40" selection-start-column="4" selection-end-line="55" selection-end-column="5" />
+        <state relative-caret-position="102">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrameDiagrams.java">
+    <entry file="file://$PROJECT_DIR$/src/IliaRH/Diagrams/FrameDiagrams.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="32" column="29" lean-forward="true" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+        <state relative-caret-position="650">
+          <caret line="154" column="0" lean-forward="true" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#drawDiagrams#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
+            <element signature="e#1202#1287#0" expanded="false" />
+            <element signature="e#1374#1456#0" expanded="false" />
+            <element signature="e#1544#1626#0" expanded="false" />
+            <element signature="e#1716#1798#0" expanded="false" />
             <element signature="method#drawAxesX#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
             <element signature="method#drawAxesY#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
-            <element signature="method#graph#0;class#Diagram#0;class#FrameDiagrams#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -617,6 +643,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
