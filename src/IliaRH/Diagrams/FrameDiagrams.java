@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 public class FrameDiagrams {
     private int FrameHeight = 560;
@@ -17,19 +18,21 @@ public class FrameDiagrams {
     private double Right = 1;//СПРАВА
     private double Top = 1;//СВЕРХУ
     private double Bottom = 1;//СНИЗУ
-    private double StartX = 250;//КООРДИНАТЫ НАЧАЛА КООРДИНАТ КООРДИНАТНОЙ ПЛОСКОСТИ. Х. В СКЭ
-    private double StartY = 250;//У
+    private double StartX = 40;//КООРДИНАТЫ НАЧАЛА КООРДИНАТ КООРДИНАТНОЙ ПЛОСКОСТИ. Х. В СКЭ
+    private double StartY = 40;//У
     private double StartX2;//В ОБЫЧНЫХ КООРДИНАТАХ
     private double StartY2;
+    private double Grid;
+    private double Scale = 10;
 
-    private double[] ArrayX,ArrayY;// МАССИВЫ ПО КОТОРЫМ СТРОИТСЯ ГРАФИК
+    private ArrayList<Double> ArrayX,ArrayY;// МАССИВЫ ПО КОТОРЫМ СТРОИТСЯ ГРАФИК
     Diagram diagram;
     JFrame frame;
 
 
 
 
-    public void drawDiagram(double[] arrayX,double[] arrayY){//на вход функция принимает два массива ПО КОТОРЫМ СТРОИТСЯ ГРАФИК
+    public void drawDiagram( ArrayList<Double> arrayX,ArrayList<Double> arrayY){//на вход функция принимает два массива ПО КОТОРЫМ СТРОИТСЯ ГРАФИК
         this.ArrayX = arrayX;
         this.ArrayY = arrayY;
         frame = new JFrame();
@@ -46,7 +49,7 @@ public class FrameDiagrams {
 
         JButton toLeftBtn = new JButton("<-");
         toLeftBtn.addActionListener((event)->{
-                StartY+=5;
+                StartX-=5;
                 diagram.repaint();
         });
 
@@ -61,6 +64,16 @@ public class FrameDiagrams {
                 StartY-=5;
                 diagram.repaint();
         });
+        JButton incScaleBtn = new JButton("+");
+        incScaleBtn.addActionListener((event)-> {
+            Scale*=5;
+            diagram.repaint();});
+
+        JButton decScaleBtn = new JButton("-");
+        decScaleBtn.addActionListener((event)->{
+            Scale/=5;
+            diagram.repaint();
+        });
 
         //размер окна
         frame.setSize(FrameWidth, FrameHeight);
@@ -69,11 +82,15 @@ public class FrameDiagrams {
 
         //компоновка элементов в окне
         JPanel panel = new JPanel();
+        JPanel panelIn = new JPanel();
         panel.setLayout(new BorderLayout());
         panel.add(BorderLayout.WEST,toLeftBtn);
         panel.add(BorderLayout.EAST,toRightBtn);
         panel.add(BorderLayout.NORTH,toNorthBtn);
         panel.add(BorderLayout.SOUTH,toSouthBtn);
+        panel.add(BorderLayout.CENTER,panelIn);
+        panelIn.add(BorderLayout.WEST,incScaleBtn);
+        panelIn.add(BorderLayout.CENTER,decScaleBtn);
         frame.getContentPane().add(BorderLayout.CENTER,diagram);
         frame.getContentPane().add(BorderLayout.SOUTH,panel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -107,7 +124,7 @@ public class FrameDiagrams {
 
 
         }
-        private void drawDiagrams(Graphics g, double[] arrayX, double[] arrayY){
+        private void drawDiagrams(Graphics g, ArrayList<Double>  arrayX, ArrayList<Double>  arrayY){
             drawAxesX(g,(int) StartY2);//оси
             drawAxesY(g,(int) StartX2);
             graph(g,arrayX,arrayY);//график
@@ -130,30 +147,42 @@ public class FrameDiagrams {
             g2d.drawLine(x0,0,x0,(int)Height);
 
         }
-        private void graph(Graphics g, double[] arrayX, double[] arrayY ){
+        private void graph(Graphics g,ArrayList<Double> arrayX , ArrayList<Double>  arrayY ){
             //Алгоритм построения графика
             Graphics2D g2d = (Graphics2D)g;
             BasicStroke bSAxes = new BasicStroke(2.0f);
             g2d.setStroke(bSAxes);
-            for(int i = 0;i<arrayX.length-1;i++){
-                g2d.drawLine((int)(arrayX[i]+StartX2),(int)(StartY2-arrayY[i]),(int)(arrayX[i+1]+StartX2),(int)(StartY2-arrayY[i+1]));
-            }
-            for(int i = 0;i<arrayX.length;i+=5){
-                g2d.drawString(String.valueOf(arrayX[i]),(int)(StartX2+arrayX[i]),(int)(StartY2+10));
-            }
-            int stepForAxesY = 100;
-            double maxEl = -1100000000;
-            for(int i = 0;i<arrayY.length;i++){
-                if(arrayY[i]>maxEl)
-                    maxEl = ArrayY[i];
-            }
 
-            for(int i = 0;i<=maxEl;i+=stepForAxesY){
-
-                g2d.drawString(String.valueOf(i),(int)(StartX2+5),(int)(StartY2-i));
-            }
+            System.out.println(arrayX.toString());
+            System.out.println(arrayY.toString());
 
 
+
+            double aX,aY;
+            double bX,bY;
+            aX = arrayX.get(0)+StartX2;
+            aY = StartY - arrayY.get(0);
+            for(int i = 1;i<arrayX.size()-1;i++){
+
+                bX = (arrayX.get(i+1)*Scale+StartX2);
+                System.out.println("scalable X:");
+                System.out.println(" "+(bX - StartX)+" ");
+                bY = (StartY2-arrayY.get(i+1)*Scale);
+                System.out.println("scalable Y");
+                System.out.println(" "+bY+" ");
+                g2d.drawLine((int)aX,(int)aY,(int)bX,(int)bY);
+                System.out.println("integer X:");
+                System.out.println(" "+(int)(bX- StartX)+" ");
+                System.out.println("integer Y:");
+                System.out.print(" "+(int)bY+" ");
+
+                //g2d.drawLine((int)((arrayX.get(i)+StartX2)),(int)((StartY2-arrayY.get(i))),(int)((arrayX.get(i+1)+StartX2)*Scale),(int)((StartY2-arrayY.get(i+1))*Scale));
+                aX = bX;
+                aY = bY;
+            }
+            /*for(int i = 0;i<arrayX.size();i+=5){
+                g2d.drawString(String.valueOf(arrayX.get(i)),(int)(StartX2+arrayX.get(i)),(int)(StartY2+10));
+            }*/
 
         }
     }
