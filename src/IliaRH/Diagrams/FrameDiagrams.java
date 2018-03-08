@@ -7,8 +7,8 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 public class FrameDiagrams {
-    private int FrameHeight = 560;
-    private int FrameWidth = 700;
+    private int FrameHeight = 600;
+    private int FrameWidth = 750;
 
 
     //НУЖНЫ ДЛЯ ПЕРОБРАЗОВАНИЙ ИЗ СКЭ В ОБЫЧНЫЕ КООРИДИНАТЫ
@@ -22,14 +22,16 @@ public class FrameDiagrams {
     private double StartY = 40;//У
     private double StartX2;//В ОБЫЧНЫХ КООРДИНАТАХ
     private double StartY2;
-    private double Grid;
-    private double Scale = 10;
+    private double Grid = 50;
+    private double Scale = 50;
+    private double ScaleX = 50;
+    private double ScaleY = 50;
 
     private ArrayList<Double> ArrayX,ArrayY;// МАССИВЫ ПО КОТОРЫМ СТРОИТСЯ ГРАФИК
     Diagram diagram;
     JFrame frame;
 
-
+    
 
 
     public void drawDiagram( ArrayList<Double> arrayX,ArrayList<Double> arrayY){//на вход функция принимает два массива ПО КОТОРЫМ СТРОИТСЯ ГРАФИК
@@ -64,35 +66,76 @@ public class FrameDiagrams {
                 StartY-=5;
                 diagram.repaint();
         });
+
         JButton incScaleBtn = new JButton("+");
         incScaleBtn.addActionListener((event)-> {
-            Scale*=5;
+            ScaleX*=2;
+            ScaleY*=2;
             diagram.repaint();});
 
         JButton decScaleBtn = new JButton("-");
         decScaleBtn.addActionListener((event)->{
-            Scale/=5;
+            ScaleX/=2;
+            ScaleY/=2;
             diagram.repaint();
         });
 
+        JButton incXScaleBtn = new JButton("x++");
+        incXScaleBtn.addActionListener((e)->{
+            ScaleX*=2;
+            diagram.repaint();
+        });
+        JButton decXScaleBtn = new JButton(("x--"));
+        decXScaleBtn.addActionListener((e)->{
+            ScaleX/=2;
+            diagram.repaint();
+        });
+
+        JButton incYScaleBtn = new JButton("y++");
+        incYScaleBtn.addActionListener((e)->{
+            ScaleY*=2;
+            diagram.repaint();
+        });
+        JButton decYScaleBtn = new JButton("y--");
+        decYScaleBtn.addActionListener((e)->{
+            ScaleY/=2;
+            diagram.repaint();
+        });
         //размер окна
         frame.setSize(FrameWidth, FrameHeight);
         diagram = new Diagram();//создаем экземпляр внутреннего класса Diagram
 
 
         //компоновка элементов в окне
-        JPanel panel = new JPanel();
+        JPanel mainPanel = new JPanel();
+        JPanel panelMove = new JPanel();
         JPanel panelIn = new JPanel();
-        panel.setLayout(new BorderLayout());
-        panel.add(BorderLayout.WEST,toLeftBtn);
-        panel.add(BorderLayout.EAST,toRightBtn);
-        panel.add(BorderLayout.NORTH,toNorthBtn);
-        panel.add(BorderLayout.SOUTH,toSouthBtn);
-        panel.add(BorderLayout.CENTER,panelIn);
+        JPanel panelRight = new JPanel();
+        JPanel panelLeft = new JPanel();
+
+        panelMove.setLayout(new BorderLayout());
+        panelMove.add(BorderLayout.WEST,toLeftBtn);
+        panelMove.add(BorderLayout.EAST,toRightBtn);
+        panelMove.add(BorderLayout.NORTH,toNorthBtn);
+        panelMove.add(BorderLayout.SOUTH,toSouthBtn);
+        panelMove.add(BorderLayout.CENTER,panelIn);
         panelIn.add(BorderLayout.WEST,incScaleBtn);
         panelIn.add(BorderLayout.CENTER,decScaleBtn);
+        panelLeft.add(BorderLayout.WEST,panelMove);
+
+        panelRight.setLayout(new BorderLayout());
+        panelRight.add(BorderLayout.NORTH,incYScaleBtn);
+        panelRight.add(BorderLayout.SOUTH,decYScaleBtn);
+        panelRight.add(BorderLayout.WEST,decXScaleBtn);
+        panelRight.add(BorderLayout.EAST,incXScaleBtn);
+
+
+
+
+        mainPanel.add(BorderLayout.WEST,panelLeft);
+        mainPanel.add(BorderLayout.EAST,panelRight);
         frame.getContentPane().add(BorderLayout.CENTER,diagram);
-        frame.getContentPane().add(BorderLayout.SOUTH,panel);
+        frame.getContentPane().add(BorderLayout.SOUTH,mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
 
@@ -160,30 +203,39 @@ public class FrameDiagrams {
 
             double aX,aY;
             double bX,bY;
-            aX = arrayX.get(0)+StartX2;
-            aY = StartY - arrayY.get(0);
-            for(int i = 1;i<arrayX.size()-1;i++){
+            aX = arrayX.get(0)*ScaleX+StartX2;
+            aY = StartY2 - arrayY.get(0)*ScaleY;
+            for(int i = 1;i<arrayX.size();i++){
 
-                bX = (arrayX.get(i+1)*Scale+StartX2);
+                bX = (arrayX.get(i)*ScaleX+StartX2);
+
                 System.out.println("scalable X:");
                 System.out.println(" "+(bX - StartX)+" ");
-                bY = (StartY2-arrayY.get(i+1)*Scale);
+
+                bY = (StartY2-arrayY.get(i)*ScaleY);
+
                 System.out.println("scalable Y");
                 System.out.println(" "+bY+" ");
+
                 g2d.drawLine((int)aX,(int)aY,(int)bX,(int)bY);
+
                 System.out.println("integer X:");
                 System.out.println(" "+(int)(bX- StartX)+" ");
                 System.out.println("integer Y:");
-                System.out.print(" "+(int)bY+" ");
+                System.out.println(" "+(int)bY+" ");
 
                 //g2d.drawLine((int)((arrayX.get(i)+StartX2)),(int)((StartY2-arrayY.get(i))),(int)((arrayX.get(i+1)+StartX2)*Scale),(int)((StartY2-arrayY.get(i+1))*Scale));
                 aX = bX;
                 aY = bY;
             }
-            /*for(int i = 0;i<arrayX.size();i+=5){
-                g2d.drawString(String.valueOf(arrayX.get(i)),(int)(StartX2+arrayX.get(i)),(int)(StartY2+10));
-            }*/
 
+            for(int i = 0;i<frame.getWidth();i++){
+                g2d.drawString(String.valueOf(i*Grid),(int)(i*Grid+StartX),(int)(StartY2+10));
+
+            }
+            /*for(int i = frame.getWidth();i>1;i-=Grid){
+                g2d.drawString(String.valueOf(i),(int)(StartX-10),(int)(i*Grid+StartY2));
+            }*/
         }
     }
 
