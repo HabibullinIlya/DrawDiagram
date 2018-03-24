@@ -1,9 +1,8 @@
 package IlyaRH.Tests;
 
 
-import IliaRH.Diagrams.FrameDiagrams;
+import IlyaRH.Diagrams.DiagramsFrame;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class SimpleTest {
@@ -17,7 +16,7 @@ public class SimpleTest {
         y.add(2.0);
         y.add(4.0);
 
-      FrameDiagrams frameDiagrams = new FrameDiagrams();
-      frameDiagrams.drawDiagram(x,y);
+      DiagramsFrame frameDiagrams = new DiagramsFrame();
+      frameDiagrams.drawFrame(x,y);
     }
 }
