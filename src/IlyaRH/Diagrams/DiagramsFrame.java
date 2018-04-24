@@ -14,10 +14,10 @@ public class DiagramsFrame {
 
     private int ScaleX = 20;
     private int ScaleY = 20;
-    private ArrayList<Double>[] args;
+    private ArrayList<ArrayList<Double>> args;
 
 
-    public void drawFrame(ArrayList<Double>...args) {
+    public void drawFrame(ArrayList<ArrayList<Double>> args) {
         /*this.x = args[0];
         this.y = args[1];*/
         this.args = args;
@@ -154,14 +154,7 @@ public class DiagramsFrame {
             label(g);
         }
 
-        private void diagramAxes(Graphics g) {
-            //System.out.println("startY2 = "+startY2);
 
-            g.setColor(Color.BLACK);
-            g.drawLine(startX, 0, startX, getHeight());
-            g.drawLine(0, startY2, getWidth(), startY2);
-
-        }
 
         private void graph(Graphics g) {
             g.setColor(Color.BLACK);
@@ -194,14 +187,14 @@ public class DiagramsFrame {
             }
 
         }
-        private void multiGraph(Graphics g,ArrayList<Double> ...args){
-            if(args.length%2!=0){
+        private void multiGraph(Graphics g,ArrayList<ArrayList<Double>> args){
+            if(args.size()%2!=0){
                 System.out.println("нечетное колв-во параметров");
             }
             else{
-                for(int i = 0;i<args.length;i+=2){
-                    x = args[i];
-                    y = args[i+1];
+                for(int i = 0;i<args.size();i+=2){
+                    x = args.get(i);
+                    y = args.get(i+1);
                     g.setColor(Color.BLACK);
                     System.out.println(x.toString());
                     System.out.println(y.toString());
@@ -234,7 +227,14 @@ public class DiagramsFrame {
                 }
             }
         }
+        private void diagramAxes(Graphics g) {
+            //System.out.println("startY2 = "+startY2);
 
+            g.setColor(Color.BLACK);
+            g.drawLine(startX, 0, startX, getHeight());
+            g.drawLine(0, startY2, getWidth(), startY2);
+
+        }
         private void grid(Graphics g) {
             for (int i = 0; i < getHeight(); i += 20) {
                 g.setColor(Color.GREEN);
@@ -245,7 +245,6 @@ public class DiagramsFrame {
                 g.drawLine(i, 0, i, getHeight());
             }
         }
-
         private void label(Graphics g) {
             for (int i = 0; i < getWidth(); i += 40) {
                 double j = i;

@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cbdaabf-32f8-487e-85d5-61135d6f7ada" name="Default" comment="change function which draw graph. now this function can draw a several graph in the frame">
-      <change afterPath="$PROJECT_DIR$/src/IlyaRH/Tasks/task2.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Diagrams.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Diagrams.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Diagrams/IliaRH/Diagrams/DiagramsFrame$DiagramPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Diagrams/IliaRH/Diagrams/DiagramsFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Diagrams/IliaRH/Diagrams/FrameDiagrams$Diagram.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Diagrams/IliaRH/Diagrams/FrameDiagrams.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Diagrams/IlyaRH/Tests/SimpleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Diagrams/IlyaRH/Tests/SimpleTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Diagrams/IlyaRH/Tests/TestFrameDiagrams.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Diagrams/IlyaRH/Tests/TestFrameDiagrams.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Diagrams/IlyaRH/Tests/main.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IlyaRH/Diagrams/DiagramsFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IlyaRH/Diagrams/DiagramsFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IlyaRH/Tasks/SecondTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IlyaRH/Tasks/task2.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IlyaRH/Tests/SimpleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IlyaRH/Tests/SimpleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IlyaRH/Tests/TestFrameDiagrams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IlyaRH/Tests/TestFrameDiagrams.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,40 +21,13 @@
       <file leaf-file-name="DiagramsFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/IlyaRH/Diagrams/DiagramsFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="178" column="28" selection-start-line="178" selection-start-column="28" selection-end-line="178" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestFrameDiagrams.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/IlyaRH/Tests/TestFrameDiagrams.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="task2.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/IlyaRH/Tasks/task2.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+            <state relative-caret-position="2741">
+              <caret line="246" column="9" selection-start-line="246" selection-start-column="9" selection-end-line="246" selection-end-column="9" />
               <folding>
-                <element signature="e#22#113#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SecondTask.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/IlyaRH/Tasks/SecondTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#graph#0;class#DiagramPanel#0;class#DiagramsFrame#0" />
+                <element signature="method#diagramAxes#0;class#DiagramPanel#0;class#DiagramsFrame#0" />
+                <element signature="method#grid#0;class#DiagramPanel#0;class#DiagramsFrame#0" />
+                <element signature="method#label#0;class#DiagramPanel#0;class#DiagramsFrame#0" />
               </folding>
             </state>
           </provider>
@@ -90,12 +57,12 @@
         <option value="$PROJECT_DIR$/src/IlyaRH/Tests/main.java" />
         <option value="$PROJECT_DIR$/src/IliaRH/Diagrams/FrameDiagrams.java" />
         <option value="$PROJECT_DIR$/src/IliaRH/Diagrams/DiagramsFrame.java" />
-        <option value="$PROJECT_DIR$/src/IlyaRH/Tests/SimpleTest.java" />
         <option value="$PROJECT_DIR$/src/IliaRH/Tests/TestFrameDiagrams.java" />
-        <option value="$PROJECT_DIR$/src/IlyaRH/Tests/TestFrameDiagrams.java" />
         <option value="$PROJECT_DIR$/src/IlyaRH/Tasks/SecondTask.java" />
-        <option value="$PROJECT_DIR$/src/IlyaRH/Diagrams/DiagramsFrame.java" />
         <option value="$PROJECT_DIR$/src/IlyaRH/Tasks/task2.kt" />
+        <option value="$PROJECT_DIR$/src/IlyaRH/Diagrams/DiagramsFrame.java" />
+        <option value="$PROJECT_DIR$/src/IlyaRH/Tests/TestFrameDiagrams.java" />
+        <option value="$PROJECT_DIR$/src/IlyaRH/Tests/SimpleTest.java" />
       </list>
     </option>
   </component>
@@ -143,28 +110,7 @@
               <item name="Diagrams" type="b2602c69:ProjectViewProjectNode" />
               <item name="Diagrams" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="IlyaRH" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Diagrams" type="b2602c69:ProjectViewProjectNode" />
               <item name="Diagrams" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="IlyaRH" type="462c0819:PsiDirectoryNode" />
-              <item name="Diagrams" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Diagrams" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Diagrams" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="IlyaRH" type="462c0819:PsiDirectoryNode" />
-              <item name="Tasks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Diagrams" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Diagrams" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="IlyaRH" type="462c0819:PsiDirectoryNode" />
-              <item name="Tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -338,16 +284,15 @@
       <workItem from="1524205385198" duration="3517000" />
       <workItem from="1524329429002" duration="8194000" />
       <workItem from="1524472010887" duration="376000" />
-      <workItem from="1524570336394" duration="348000" />
+      <workItem from="1524570336394" duration="1197000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79047000" />
+    <option name="totallyTimeSpent" value="79896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -359,11 +304,11 @@
       <window_info anchor="right" id="Maven Projects" order="1" weight="0.3293556" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4967742" weight="0.35758513" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4967742" visible="true" weight="0.055727553" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17698413" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17698413" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -533,13 +478,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/IlyaRH/Tests/SimpleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/IlyaRH/Tests/main.java" />
     <entry file="file://$PROJECT_DIR$/src/IliaRH/Diagrams/DiagramsFrame.java" />
     <entry file="file://$PROJECT_DIR$/src/IliaRH/Tests/SimpleTest.java" />
@@ -554,27 +492,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/IlyaRH/Tests/TestFrameDiagrams.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/IlyaRH/Tasks/task2.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        <state relative-caret-position="-133">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
           <folding>
             <element signature="e#22#113#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/IlyaRH/Tests/SimpleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IlyaRH/Tests/TestFrameDiagrams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/IlyaRH/Diagrams/DiagramsFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="178" column="28" selection-start-line="178" selection-start-column="28" selection-end-line="178" selection-end-column="28" />
+        <state relative-caret-position="2741">
+          <caret line="246" column="9" selection-start-line="246" selection-start-column="9" selection-end-line="246" selection-end-column="9" />
+          <folding>
+            <element signature="method#graph#0;class#DiagramPanel#0;class#DiagramsFrame#0" />
+            <element signature="method#diagramAxes#0;class#DiagramPanel#0;class#DiagramsFrame#0" />
+            <element signature="method#grid#0;class#DiagramPanel#0;class#DiagramsFrame#0" />
+            <element signature="method#label#0;class#DiagramPanel#0;class#DiagramsFrame#0" />
+          </folding>
         </state>
       </provider>
     </entry>
