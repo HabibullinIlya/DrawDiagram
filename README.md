@@ -1,5 +1,5 @@
 # DrawDiagram
-this code can draw diagram by data from array
+this code can draw diagram by data from array.
 just use my class DiagramsFrame and method drawFrame(ArrayList<ArrayList<Double>>) which takes array of array of values x and y your graph
 for example
 
